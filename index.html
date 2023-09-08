@@ -8,6 +8,9 @@
         <!-- Reset css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
+        <!-- Animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,28 +21,1082 @@
 
         <!-- Favicon -->
 
-        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon4/">
-        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon4/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon4/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon4/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon4/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon4/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon4/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon4/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon4/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon4/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon4/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon4/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon4/favicon-16x16.png">
-        <link rel="manifest" href="./assets/favicon4/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon4/" />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon4/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon4/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon4/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon4/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon4/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon4/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon4/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon4/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon4/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon4/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon4/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon4/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon4/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
 
         <!-- Style css -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
+        <!-- Header -->
+        <header class="header__top">
+            <div class="container">
+            <div class="header__top-sticky">
+                <div class="logo-section">
+                    <a href="#">
+                        <img
+                            src="./assets/images/Logo.svg"
+                            alt="Lucy"
+                            class="logo animate__animated animate__backInLeft"
+                        />
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <ul class="header__list">
+                        <li class="header__items">
+                            <a class="header__link active" href="#"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="header__items">
+                            <a class="header__link" href="#about">About</a>
+                        </li>
+                        <li class="header__items">
+                            <a class="header__link" href="#services"
+                                >Services & Rates</a
+                            >
+                        </li>
+                        <li class="header__items">
+                            <a class="header__link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="header__items">
+                            <a class="header__link" href="#footer"
+                                >Contacts us</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="header__cta">
+                    <button class="header__btn">Sign up</button>
+                </div>
+            </div>
+
+                <section class="hero">
+                    <div class="hero__body">
+                        <!-- Media-block -->
+                        <div class="hero__media-block">
+                            <figure class="hero__images">
+                                <img
+                                    src="./assets/images/hero-1.png"
+                                    alt="cat"
+                                    class="hero__image"
+                                />
+                                <img
+                                    src="./assets/images/hero-6.svg"
+                                    alt="square"
+                                    class="square"
+                                />
+                                <img
+                                    src="./assets/images/hero-7.svg"
+                                    alt="circle"
+                                    class="circle"
+                                />
+                                <img
+                                    src="./assets/images/hero-2.png"
+                                    alt="dog"
+                                    class="hero__image second"
+                                />
+                            </figure>
+
+                            <div class="hero__pet-wrapper">
+                                <div class="hero__pet-block">
+                                    <div class="pet-images">
+                                        <img
+                                            src="./assets/images/hero-3.png"
+                                            alt="dog"
+                                            class="pet_image"
+                                        />
+                                    </div>
+
+                                    <div class="pet-info">
+                                        <span class="pet-health"
+                                            >Pet Health</span
+                                        >
+                                        <span class="pet-line"></span>
+                                        <span class="pet-line second"></span>
+                                    </div>
+                                </div>
+
+                                <span class="line-break"></span>
+
+                                <div class="hero__pet-block">
+                                    <div class="pet-images">
+                                        <img
+                                            src="./assets/images/hero-4.png"
+                                            alt="dog"
+                                            class="pet_image"
+                                        />
+                                    </div>
+
+                                    <div class="pet-info">
+                                        <span class="pet-health">Pet Care</span>
+                                        <span class="pet-line"></span>
+                                        <span class="pet-line second"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content-block -->
+                        <section class="hero__content-block">
+                            <h1 class="heading__section hero__heading">
+                                Established & Trusted Pet Care Service
+                            </h1>
+                            <p class="desc__section hero__desc">
+                                Discover a wide variety of Positive services to
+                                choose from, including daycare, private walks,
+                                office duty and spa.
+                            </p>
+                            <div class="hero__cta">
+                                <button class="hero__btn">
+                                    <span class="hero-action">Book a Meet</span>
+                                    <img
+                                        src="./assets/images/hero-5.svg"
+                                        alt="image"
+                                        class="hero__btn-image"
+                                    />
+                                </button>
+
+                                <a href="#!">
+                                    <span class="hero__schedule"
+                                        >Schedule a Call</span
+                                    >
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </header>
+
+        <!-- Main -->
+       <main>
+            <!-- About  -->
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="about__body">
+                        <!-- Content-block -->
+                        <section class="about__content-block">
+                            <span class="about__title">// About //</span>
+                            <h2 class="heading__section">
+                                Best Agency For Your Pet.
+                            </h2>
+                            <p class="desc__section about__desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.
+                            </p>
+                            <div class="about__checklist">
+                                <div 
+                                class="about__check-items"  
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="700">
+                                    Certified Groomer
+                                </div>
+    
+                                <div  
+                                class="about__check-items"   
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine">
+                                    Animal Lover
+                            </div>
+
+                                <div 
+                                class="about__check-items"  
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine">
+                                    14+ Years Experience
+                                </div>
+    
+                                <div 
+                                class="about__check-items"  
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine">
+                                    Pet Parent Of 3 Dogs
+                                </div>
+                            </div>
+                        </section>
+    
+                        <!-- Media-block -->
+                        <div class="about__media-block">
+                            <div class="about__experience">
+                                <img
+                                    src="./assets/images/about-2.svg"
+                                    alt="image-decor"
+                                    class="about__experience-decor"
+                                />
+                                <span class="about__number">20+</span>
+                                <span class="about__info">Years Experience</span>
+                            </div>
+    
+                            <figure class="about__media-block-wrapper">
+                                <img
+                                    src="./assets/images/about-3.svg"
+                                    alt="image-decor"
+                                    class="about__media-block-decor"
+                                />
+                                <img
+                                    src="./assets/images/about-1.png"
+                                    alt="cat holding"
+                                    class="about__media-block-image"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Features -->
+            <section class="features">
+                <div class="container">
+                    <div class="features__body">
+                        <!-- Media-block -->
+                        <div class="features__media-block">
+                            <figure class="features__image-wrapper">
+                                <img
+                                    src="./assets/images/feature-1.png"
+                                    alt="dog"
+                                    class="features__image"
+                                />
+    
+                                <svg
+                                    class="white-string"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="9"
+                                    height="33"
+                                    viewBox="0 0 9 33"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M6 1.5C5.83333 2.66667 5.8 5.4 7 7C8.5 9 8 10 5.5 11.5C3 13 3.5 15 5 17.5C6.5 20 5.5 20.5 3.5 22C1.5 23.5 1 24 3 26.5C4.6 28.5 3.33333 30.6667 2.5 31.5"
+                                        stroke="#F8F8F8"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+    
+                                <svg
+                                    class="brown-string1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="21"
+                                    height="36"
+                                    viewBox="0 0 21 36"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M20 0C18.8333 0.166667 16.6 1.5 17 5.5C17.5 10.5 15 11.5 13 12C11 12.5 9.5 13 10 18.5C10.5 24 7 24.5 4.5 25C2 25.5 1 26.5 1.5 35"
+                                        stroke="#AE8459"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <svg
+                                    class="brown-string2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="56"
+                                    height="30"
+                                    viewBox="0 0 56 30"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M55 1C54.5 1.83333 52.7 3.2 49.5 2C45.5 0.5 42.5 0.5 40.5 5C38.5 9.5 38 13 32 11C26 9 24.5 11 23.5 15C22.5 19 20.5 21.5 16 19.5C11.5 17.5 7 17.5 6 22C5 26.5 5 28.5 1.5 28"
+                                        stroke="#E08345"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+    
+                                <svg
+                                    class="blue-circle"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="125"
+                                    height="121"
+                                    viewBox="0 0 125 121"
+                                    fill="none"
+                                >
+                                    <circle
+                                        cx="53.8125"
+                                        cy="53.8125"
+                                        r="53.8125"
+                                        transform="matrix(-1 0 0 1 124 12.958)"
+                                        stroke="#5992C3"
+                                        stroke-width="2"
+                                    />
+                                    <circle
+                                        cx="52.1042"
+                                        cy="52.1042"
+                                        r="52.1042"
+                                        transform="matrix(-1 0 0 1 114.604 8.6875)"
+                                        stroke="#5992C3"
+                                        stroke-width="2"
+                                    />
+                                    <circle
+                                        cx="52.1042"
+                                        cy="52.1042"
+                                        r="52.1042"
+                                        transform="matrix(-1 0 0 1 105.208 1)"
+                                        stroke="#5992C3"
+                                        stroke-width="2"
+                                    />
+                                </svg>
+    
+                                <svg
+                                    class="blue-triangle"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="23"
+                                    height="26"
+                                    viewBox="0 0 23 26"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M0 3.5L23 0L14 25.5L0 3.5Z"
+                                        fill="#3F97E4"
+                                    />
+                                </svg>
+    
+                                <svg
+                                    class="white-triangle"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="14"
+                                    height="16"
+                                    viewBox="0 0 14 16"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M9.5 15L13 1L1 3.5L9.5 15Z"
+                                        stroke="white"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </figure>
+                        </div>
+    
+                        <!-- Content-block -->
+                        <section class="features__content-block">
+                            <h2 class="heading__section features__heading">
+                                Taking A Vacation? So Is Your Pet.
+                            </h2>
+                            <p class="desc__section">
+                                We offer long-term and short-term boarding. Every
+                                dog has its own private, spacious room and daily
+                                individual time in our large play yard.
+                            </p>
+                            <div class="features__services">
+                                <div class="features__lists">
+                                    <img
+                                        src="./assets/images/features-2.svg"
+                                        alt="house"
+                                        class="features__lists-image"
+                                    />
+                                    <span class="features-item">Pet Boarding</span>
+                                </div>
+    
+                                <div class="features__lists">
+                                    <img
+                                        src="./assets/images/features-3.svg"
+                                        alt="apartment"
+                                        class="features__lists-image"
+                                    />
+                                    <span class="features-item">Pet Daycare</span>
+                                </div>
+    
+                                <div class="features__lists">
+                                    <img
+                                        src="./assets/images/features-4.svg"
+                                        alt="bag"
+                                        class="features__lists-image"
+                                    />
+                                    <span class="features-item">Pet Transport</span>
+                                </div>
+                            </div>
+                            <p class="features__desc">
+                                While you're on holiday, here's where your furry
+                                friends will spend their time.
+                            </p>
+                            <a href="#!" class="features__link">View more</a>
+                        </section>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Services -->
+            <section class="services" id="services">
+                <div class="container">
+                    <!-- Top -->
+                    <div class="services__top">
+                        <span class="service__title">What we do for you?</span>
+                        <h2 class="heading__section">Our Services</h2>
+                    </div>
+    
+                    <!-- Body -->
+                    <section class="services__body">
+                        <!-- Left-columns -->
+                        <section 
+                        class="services__left-columns"
+                        data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="700">
+                            <!-- Article 1 -->
+                            <article class="services__content">
+                                <h3 class="headinglv1__section services__heading">Puppy Sitting</h3>
+                                <p class="desclv1__section">
+                                    Helping your new pup to be a good boy or girl
+                                    isn’t always easy, but we’re here to help.
+                                </p>
+                                <div class="services__info">
+                                    <a href="#!" class="services__more"
+                                        >Read More</a
+                                    >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M3 9L9 3"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M4.125 3H9V7.875"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </article>
+    
+                            <!-- Article 2 -->
+                            <article class="services__content">
+                                <h3 class="headinglv1__section services__heading">Dog Walking</h3>
+                                <p class="desclv1__section">
+                                    Choose from a 30, 45, or 60-minute visit to give
+                                    your pet their daily dose of fun-filled.
+                                </p>
+                                <div class="services__info">
+                                    <a href="#!" class="services__more"
+                                        >Read More</a
+                                    >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M3 9L9 3"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M4.125 3H9V7.875"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </article>
+    
+                            <!-- Article 3 -->
+                            <article class="services__content">
+                                <h3 class="headinglv1__section services__heading">Pet Sitting</h3>
+                                <p class="desclv1__section">
+                                    While you’re away we can make sure your pet has
+                                    all the food, water, exercise, and, of course.
+                                </p>
+                                <div class="services__info">
+                                    <a href="#!" class="services__more"
+                                        >Read More</a
+                                    >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M3 9L9 3"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M4.125 3H9V7.875"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </article>
+                        </section>
+    
+                        <!-- Image -->
+                        <div class="services__mid-columns">
+                            <figure class="services__images-wrapper">
+                                <img
+                                    src="./assets/images/services-1.png"
+                                    alt=""
+                                    class="services__image"
+                                />
+                            </figure>
+    
+                            
+                            <button class="services__btn">
+                                View all Services
+                              </button>
+                        </div>
+    
+                    
+                        <!-- Right-columns -->
+                        <section class="services__right-columns"
+                                 data-aos="fade-left"
+                                 data-aos-duration="700">
+                            <!-- Article 1 -->
+                            <article class="services__content">
+                                <h3 class="headinglv1__section services__heading">Overnight Care</h3>
+                                <p class="desclv1__section">
+                                    If you’re away for the night, we can stay the
+                                    night or stop by in the evening and morning.
+                                </p>
+                                <div class="services__info">
+                                    <a href="#!" class="services__more"
+                                        >Read More</a
+                                    >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M3 9L9 3"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M4.125 3H9V7.875"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </article>
+    
+                            <!-- Article 2 -->
+                            <article class="services__content">
+                                <h3 class="headinglv1__section services__heading">Pet Taxi</h3>
+                                <p class="desclv1__section">
+                                    Does your pet need a lift to the groomers, vet,
+                                    or dog park? We’ve got their tail covered.
+                                </p>
+                                <div class="services__info">
+                                    <a href="#!" class="services__more"
+                                        >Read More</a
+                                    >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M3 9L9 3"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M4.125 3H9V7.875"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </article>
+    
+                            <!-- Article 3 -->
+                            <article class="services__content">
+                                <h3 class="headinglv1__section services__heading">
+                                    Pet Medical Admin
+                                </h3>
+                                <p class="desclv1__section">
+                                    Our team of experienced professionals can help
+                                    with everything from pills to injections.
+                                </p>
+                                <div class="services__info">
+                                    <a href="#!" class="services__more"
+                                        >Read More</a
+                                    >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M3 9L9 3"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M4.125 3H9V7.875"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </article>
+    
+                            
+                           
+                        </section>
+                    </section>
+                </div>
+            </section>
+    
+             <!-- Staff-->
+             <section class="staff">
+                <div class="container">
+                    <div class="staff__top">
+                        <span class="staff__title">Pet Care Staff</span>
+                        <h2 class="heading__section">Meet Our Groomers</h2>
+                    </div>
+    
+                    <section class="staff__body">
+                        <!-- Article 1 -->
+                        <article class="staff__content-block">
+                            <figure class="staff__wrapper-image">
+                                <img src="./assets/images/staff-1.png" alt="Meghan Samit" class="staff__image">
+                            </figure>
+                            <div class="staff__info">
+                                <span class="staff__job">Pet Trainer</span>
+                                <h3>
+                                    <a href="#!" class="headinglv1__section">Meghan Samit</a>
+                                </h3>
+                            </div>
+                        </article>
+    
+                        <!-- Article 2 -->
+                        <article class="staff__content-block">
+                            <figure class="staff__wrapper-image">
+                                <img src="./assets/images/staff-2.png" alt="Alissa Silva" class="staff__image">
+                            </figure>
+                            <div class="staff__info">
+                                <span class="staff__job">Veterinarian</span>
+                                <h3>
+                                    <a href="#!" class="headinglv1__section">Alissa Silva</a>
+                                </h3>
+                            </div class="staff__info">
+                        </article>
+    
+                        <!-- Article 3 -->
+                        <article class="staff__content-block">
+                            <figure class="staff__wrapper-image">
+                                <img src="./assets/images/staff-3.png" alt="Cindy Harris" class="staff__image">
+                            </figure>
+                            <div class="staff__info">
+                                <span class="staff__job">Pet Trainer</span>
+                                <h3>
+                                    <a href="#!" class="headinglv1__section">Cindy Harris</a>
+                                </h3>
+                            </div>
+                        </article>
+    
+                        <!-- Article 4 -->
+                        <article class="staff__content-block">
+                            <figure class="staff__wrapper-image">
+                                <img src="./assets/images/staff-4.png" alt="Lucas Tony" class="staff__image">
+                            </figure>
+                            <div class="staff__info">
+                                <span class="staff__job">Animal Caretaker</span>
+                                <h3>
+                                    <a href="#!" class="headinglv1__section">Lucas Tony</a>
+                                </h3>
+                            </div>
+                        </article>
+                    </section>
+    
+                    <button class="staff__btn">
+                        View All Team
+                      </button>
+                </div>
+             </section>
+    
+              <!--Pricing-->
+              <section class="pricing">
+                <div class="container">
+                    <div class="pricing-top">
+                        <h2 class="heading__section">The Best Choice</h2>
+                        <p class="desc__section pricing__desc">We offer long-term and short-term boarding. Every dog has its own private, spacious room and daily individual time in our large play yard.</p>
+    
+    
+                        <div class="pricing__time">
+                            Monthly
+                        </div>
+    
+                        <img src="./assets/images/pricing-1.svg" alt="sale 15%" class="pricing__image">
+                    </div>
+    
+                    <section class="pricing__body">
+                        <article class="pricing__content-block"     data-aos="flip-left">
+                            <div class="pricing__title">Basic</div>
+                            <div class="pricing__task">Day care</div>
+                            <div class="pricing__price">$150</div>
+                            <button class="pricing__btn">Purchase Now</button>
+                            <div class="pricing__services-lists">
+                                <div class="desclv1__section pricing__services-items">Single room</div>
+                                <div class="desclv1__section pricing__services-items">Socialist Exercise</div>
+                                <div class="desclv1__section pricing__services-items">Custom Meals</div>
+                                <div class="desclv1__section pricing__services-items">Spa and Grooming</div>
+                                <div class="desclv1__section pricing__services-items blur">Exercises 2x</div>
+                                <div class="desclv1__section pricing__services-items blur">Custom Meals</div>
+                                <div class="desclv1__section pricing__services-items blur">Grooming 2x</div>
+                            </div>
+                        </article>
+    
+                        <article class="pricing__content-block" data-aos="flip-left">
+                            <div class="pricing__title">Exclusive</div>
+                            <div class="pricing__task">2X Care</div>
+                            <div class="pricing__price">$199</div>
+                            <button class="pricing__btn active">Purchase Now</button>
+                            <div class="pricing__services-lists">
+                                <div class="desclv1__section pricing__services-items">Single room</div>
+                                <div class="desclv1__section pricing__services-items">Socialist Exercise</div>
+                                <div class="desclv1__section pricing__services-items">Custom Meals</div>
+                                <div class="desclv1__section pricing__services-items">Spa and Grooming</div>
+                                <div class="desclv1__section pricing__services-items blur">Exercises 2x</div>
+                                <div class="desclv1__section pricing__services-items blur">Custom Meals</div>
+                                <div class="desclv1__section pricing__services-items blur">Grooming 2x</div>
+                            </div>
+                        </article>
+    
+                        <article class="pricing__content-block" data-aos="flip-left">
+                            <div class="pricing__title">Platinum</div>
+                            <div class="pricing__task">4X Care</div>
+                            <div class="pricing__price">$299</div>
+                            <button class="pricing__btn">Purchase Now</button>
+                            <div class="pricing__services-lists">
+                                <div class="desclv1__section pricing__services-items">Single room</div>
+                                <div class="desclv1__section pricing__services-items">Socialist Exercise</div>
+                                <div class="desclv1__section pricing__services-items">Custom Meals</div>
+                                <div class="desclv1__section pricing__services-items">Spa and Grooming</div>
+                                <div class="desclv1__section pricing__services-items blur">Exercises 2x</div>
+                                <div class="desclv1__section pricing__services-items blur">Custom Meals</div>
+                                <div class="desclv1__section pricing__services-items blur">Grooming 2x</div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+              </section>
+    
+              <!-- Reviews -->
+              <section class="reviews" id="reviews">
+                <div class="container">
+                        <div class="reviews__body">
+                            <div class="arrow-wrapper">
+                                <img src="./assets/images/reviews-arrow.svg" alt="arrow"    >
+                            </div>
         
+        
+                            <div class="arrow-wrapper second">
+                                <img src="./assets/images/reviews-white-arrow.svg" alt="white-arrow"  >
+                            </div>
+        
+                           <div class="reviews__media-block" data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="1000">
+                                <figure class="reviews__image-wrapper">
+                                    <img src="./assets/images/reviews-1.png" alt="Karla Deras" class="reviews__image">
+                                </figure>
+                           </div>
+        
+                            <section class="reviews__content-block"
+                            data-aos="fade-left"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="1000">
+                                <h2 class="heading__section">Our Reviews    </h2>
+                                <p class="reviews__desc">“It was very comforting to recieve a text and pics each day about our pets and how they were doing. It was also nice that my pets were in the comfortable environment of their own home and received playfull attention from our pet sitters as well. Thanks so much!”</p>
+                                <span class="reviews__name">Karla Deras</span>
+                            </section>
+                        </div>
+                        
+                        <div class="reviews__more">
+                            <div class="block"></div>
+                            <div class="circle2"></div>
+                            <div class="circle2"></div>
+                            <div class="circle2"></div>
+                            <div class="circle2"></div>
+                        </div>
+                </div>
+              </section>
+    
+               <!-- Blog -->
+               <section class="blog">
+                <div class="container">
+                    <section class="blog__top">
+                        <div class="blog__top-left">
+                            <h2 class="heading__section">Our Blog</h2>
+                        </div>
+                        <div class="blog__top-right">
+                            <p class="desc__section blog__desc">Stay up to date with the latest tech trands and news in the pets.</p>
+                            <button class="blog__btn">View All Blog</button>
+                        </div>
+                    </section>
+    
+                    <section class="blog__body">
+                        <!-- Article 1 -->
+                        <article class="blog__media-block">
+                            <figure class="blog__image-wrapper">
+                                <figcaption class="blog__time">21 june 2021</figcaption>
+                                <img src="./assets/images/blog-1.jpg" alt="cat" class="blog__image">
+                            </figure>
+    
+                            <section class="blog__content-block">
+                                <h3>
+                                    <a href="#!" class="headinglv1__section blog__heading line-clamp">Building Bonds and Trusting Relationships with Your Pets.</a>
+                                </h3>
+                                <p class="desclv1__section blog__desc line-clamp">There isn’t a relationship around that can survive without trust. My relationship with my dog Peyton is deep.</p>
+                            </section>
+                        </article>
+    
+                        <!-- Article 2 -->
+                        <article class="blog__media-block">
+                            <figure class="blog__image-wrapper second">
+                                <figcaption class="blog__time">28 june 2021</figcaption>
+                                <img src="./assets/images/blog-2.jpg" alt="cat" class="blog__image">
+                            </figure>
+    
+                            <section class="blog__content-block">
+                                <h3>
+                                    <a href="#!" class="headinglv1__section blog__heading line-clamp">Celebrity pet photographer Grace Chon on taking.</a>
+                                </h3>
+                                <p class="desclv1__section blog__desc line-clamp">Doting pet parents have a relentless need to constantly photograph every adorable pet moment.</p>
+                            </section>
+                        </article>
+    
+                        <!-- Article 3 -->
+                        <article class="blog__media-block">
+                            <figure class="blog__image-wrapper third">
+                                <figcaption class="blog__time">10 july 2021</figcaption>
+                                <img src="./assets/images/blog-3.jpg" alt="cat" class="blog__image">
+                            </figure>
+    
+                            <section class="blog__content-block">
+                                <h3>
+                                    <a href="#!" class="headinglv1__section blog__heading line-clamp">5 Simple Tricks To Create A More Conscious.</a>
+                                </h3>
+                                <p class="desclv1__section blog__desc line-clamp">It is easy to forget that animals are living creatures with a beating heart.</p>
+                            </section>
+                        </article>
+                    </section>
+                </div>
+               </section>
+       </main>
+
+           <!-- Footer -->
+           <section class="footer" id="footer">
+                    <div class="container">
+                        <section class="footer__body">
+                            <section class="footer__left">
+                                <div class="footer__contact">
+                                    <img src="./assets/images/Logo.svg" alt="Lucy" class="logo">
+                                    <form class="email__input">
+                                    <input 
+                                    type="email" 
+                                    class="email" 
+                                    name="" 
+                                    required
+                                    id=""placeholder="Enter your email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                        <div class="email__arrow-wrapper">
+                                            <a href="#!"><img src="./assets/images/reviews-white-arrow.svg" alt="white-arrow" class="email__arrow"></a>
+                                        </div>
+                                    </form>
+                                    <h4><a href="#!"class="footer__heading">Follow Us</a></h4>
+                                    <div class="social-medias">
+                                        <div class="icon-wrapper">
+                                            <a href="https://www.facebook.com/?locale=vi_VN"><img src="./assets/images/facebook.svg" alt="facebook" class="social-media-icons"></a>
+                                        </div>
+                                        <div class="icon-wrapper">
+                                            <a href="https://twitter.com/login?lang=vi"><img src="./assets/images/twitter.svg" alt="twitter" class="social-media-icons"></a>
+                                        </div>
+                                        <div class="icon-wrapper">
+                                            <a href="https://www.linkedin.com/"><img src="./assets/images/linked.svg" alt="linked" class="social-media-icons"></a>
+                                        </div>
+                                        <div class="icon-wrapper">
+                                            <a href="https://www.instagram.com/"><img src="./assets/images/insta.svg" alt="instagram" class="social-media-icons"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                           
+                        <section class="footer__right">
+                            <div class="footer__info">
+                                <ul class="footer__list">
+                                    <h4><a href="#!" class="footer__heading">Explore</a></h4>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">About us</a>
+                                    </li>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">Services</a>
+                                    </li>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">Our teams</a>
+                                    </li>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">Adopt Pet</a>
+                                    </li>
+                                </ul>
+    
+                                <ul class="footer__list">
+                                    <h4><a href="#!" class="footer__heading">Useful links</a></h4>   
+                                     <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">FAQs</a>
+                                    </li>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">Shop</a>
+                                    </li>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">Privacy Policy</a>
+                                    </li>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">Terms of Use</a>
+                                    </li>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">Site Map</a>
+                                    </li>
+                                </ul>
+    
+                                <ul class="footer__list">
+                                    <h4><a href="#!" class="footer__heading">Contact Info</a></h4>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">abc@gmail.com</a>
+                                    </li>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">0 (800)-000-00-00</a>
+                                    </li>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">New York, NY, Rocawy 7</a>
+                                    </li>
+                                </ul>
+                                
+                                <ul class="footer__list">
+                                    <h4><a href="#!" class="footer__heading">Opening Time</a></h4>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">Mon – Fri : 08.00 am – 20.00 pm</a>
+                                    </li>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">Saturday : 09.00 am – 20.00 pm</a>
+                                    </li>
+                                    <li class="footer__items">
+                                        <a href="#!" class="desclv1__section">Sunday: We are Closed</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+           </section>
+
+           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+           <script>
+               AOS.init();
+             </script>
     </body>
 </html>
